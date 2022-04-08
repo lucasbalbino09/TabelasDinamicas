@@ -1,50 +1,46 @@
 function adicionar() {
 
+    if (texto == 0 || valor == 0 || quant == 0) {
 
-    // Os 3 inputs;
-    let text = document.getElementById("texto").value;
-    let valorc = document.getElementById("valor").value;
-    let quant = document.getElementById("quant").value;
-
-    // Os 3 resultados;
-    let restxt = document.getElementById("resitem").innerHTML;
-    let resvalor = document.getElementById("resvalue").innerHTML;
-    let resquant = document.getElementById("resqaunt").innerHTML;
-
-
-
-    if (text == 0 || valorc == 0 || quant == 0) {
-
-        window.alert("Erro, verifique os dados e tente novamente..");
+        windows.alert("Opaa, verifique os dados e tente novamente.");
 
     } else {
 
-        this.arrayProdutos = [];
-        let tbody = document.getElementById("tbl");
+        // Os 3 inputs;
+        let texto = document.getElementById("texto").value;
+        let valor = document.getElementById("valor").value;
+        let quant = document.getElementById("quant").value;
+        let somar = valor * quant;
 
-        for (let i = 0; i < this.arrayProdutos; i++) {
+        //Tabela, linha e incersão.
+        let tb = document.getElementById("tabl");
+        var qtdlinhas = tb.rows.length;
+        let linhas = tb.insertRow(qtdlinhas);
+
+        //posição de cada linha. 
+        let celltext = linhas.insertCell(0);
+        let cellvalor = linhas.insertCell(1);
+        let cellquant = linhas.insertCell(2);
+        let cellsoma = linhas.insertCell(3);
+
+        //modificação em cada linha.
+        celltext.innerHTML = texto
+        cellvalor.innerHTML = valor
+        cellquant.innerHTML = quant
+        cellsoma.innerHTML = somar
 
 
 
-            //logica;
-            document.getElementById("resitem").innerHTML = text;
-            document.getElementById("resvalue").innerHTML = valorc;
-            document.getElementById("resqaunt").innerHTML = quant;
-
-
-
-
-            //Limpeza altomatizada;
-            document.getElementById("texto").value = null;
-            document.getElementById("valor").value = null;
-            document.getElementById("quant").value = null;
-        }
-
-
+        //Limpeza altomatizada;
+        document.getElementById("texto").value = null;
+        document.getElementById("valor").value = null;
+        document.getElementById("quant").value = null;
 
     }
 
 }
+
+
 
 function limpar() {
 
@@ -57,4 +53,7 @@ function limpar() {
     document.getElementById("texto").value = null;
     document.getElementById("valor").value = null;
     document.getElementById("quant").value = null;
+
+
+
 }

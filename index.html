@@ -27,31 +27,28 @@
                     Quantidade do produto: <input class="input" id="quant" type="number">
                 </p>
 
-
-
-                <button type="button" class="btn btn-danger" onclick="adicionar()"> Adicionar </button>
+                <button type="button" class="btn btn-danger" onclick="adicionar(texto.value, valor.value, quant.value)"> Adicionar </button>
                 <button type="button" class="btn btn-danger" onclick="limpar()"> limpar </button>
 
             </div>
-            <table class="tabela">
-                <tbody id="tbl">
-                    <tr>
-                        <th>Itens</th>
-                        <th>Valor</th>
-                        <th>Quantidade</th>
-                        <th>Resultado</th>
-                    </tr>
-                    <tr>
-                        <td id="resitem">.</td>
-                        <td id="resvalue">.</td>
-                        <td id="resqaunt">.</td>
-                        <td id="res">.</td>
-                    </tr>
-                </tbody>
-            </table>
 
+            <div id="tabela" class="tabela">
+                <table id="tabl">
+                    <thead>
+                        <tr>
+                            <th>Itens</th>
+                            <th>Valor</th>
+                            <th>Quantidade</th>
+                            <th>soma</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
 
         </section>
+        <footer id="logo">
+            &copy; Lucas Balbino.
+        </footer>
     </div>
 
 
