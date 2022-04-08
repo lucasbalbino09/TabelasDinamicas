@@ -17,15 +17,12 @@
         <section>
             <div class="selecao">
 
-                <p>
-                    Coloque o Item: <input class="input" id="texto" type="texto">
-                </p>
-                <p>
-                    O valor do item: <input class="input" id="valor" type="number">
-                </p>
-                <p>
-                    Quantidade do produto: <input class="input" id="quant" type="number">
-                </p>
+                <br> Coloque o Item: <input class="input" id="texto" type="texto">
+
+                <br><br> O valor do item: <input class="input" id="valor" type="number">
+
+                <br><br> Valor do produto: <input class="input" id="quant" type="number">
+                <br>
 
                 <button type="button" class="btn btn-danger" onclick="adicionar(texto.value, valor.value, quant.value)"> Adicionar </button>
                 <button type="button" class="btn btn-danger" onclick="limpar()"> limpar </button>
@@ -36,6 +33,7 @@
                 <table id="tabl">
                     <thead>
                         <tr>
+                            <th>Posição</th>
                             <th>Itens</th>
                             <th>Valor</th>
                             <th>Quantidade</th>
@@ -44,7 +42,7 @@
                     </thead>
                 </table>
             </div>
-
+            <hr>
         </section>
         <footer id="logo">
             &copy; Lucas Balbino.

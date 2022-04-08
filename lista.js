@@ -18,12 +18,14 @@ function adicionar() {
         let linhas = tb.insertRow(qtdlinhas);
 
         //posição de cada linha. 
-        let celltext = linhas.insertCell(0);
-        let cellvalor = linhas.insertCell(1);
-        let cellquant = linhas.insertCell(2);
-        let cellsoma = linhas.insertCell(3);
+        let cellposi = linhas.insertCell(0);
+        let celltext = linhas.insertCell(1);
+        let cellvalor = linhas.insertCell(2);
+        let cellquant = linhas.insertCell(3);
+        let cellsoma = linhas.insertCell(4);
 
         //modificação em cada linha.
+        cellposi.innerHTML = qtdlinhas + "ª";
         celltext.innerHTML = texto
         cellvalor.innerHTML = valor
         cellquant.innerHTML = quant
