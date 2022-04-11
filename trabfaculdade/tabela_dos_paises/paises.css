@@ -1,0 +1,18 @@
+body {
+    background-image: linear-gradient(45deg, yellow, blue, red);
+    height: 100vh;
+}
+
+th,
+td {
+    padding: 10px 20px;
+    border: 1px solid rgb(238, 228, 228);
+    font: normal 30px Arial;
+}
+
+img {
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    margin-left: 70px;
+}
