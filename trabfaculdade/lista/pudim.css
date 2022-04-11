@@ -1,0 +1,18 @@
+body {
+    background-image: linear-gradient(45deg, blue, red, yellow);
+    font: normal 20pt arial;
+    margin: 50px;
+}
+
+img {
+    margin-left: 300px;
+    border-radius: 150px;
+}
+
+.list {
+    padding-top: 4%;
+}
+
+.preparo {
+    padding-top: 5%;
+}
