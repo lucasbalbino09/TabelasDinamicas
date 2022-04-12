@@ -1,0 +1,41 @@
+body {
+    background-image: linear-gradient(45deg, blue, red, yellow);
+    font: normal 30px arial;
+    margin: 50px;
+}
+
+h1 {
+    color: rgb(88, 56, 6);
+}
+
+img {
+    margin-left: 300px;
+    border-radius: 150px;
+}
+
+.principal {
+    font: normal 100px Arial;
+    text-align: center;
+    margin-left: 50px;
+}
+
+picture {
+    padding-top: 10%;
+}
+
+.list {
+    padding-top: 4%;
+}
+
+.preparo {
+    padding-top: 5%;
+}
+
+p {
+    padding-top: 5%;
+    color: antiquewhite;
+}
+
+footer {
+    color: aquamarine;
+}

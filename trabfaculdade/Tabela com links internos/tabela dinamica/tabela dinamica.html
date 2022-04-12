@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="tabeladnc.css">
+    <script src="lista.js" defer></script>
+    <title>lista</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lista de Compras.</h1>
+        <img src="/Tabela com links internos/tabela dinamica/Compras.jpg" alt="compras">
+
+        <h3> Calcule suas compras agora !</h3>
+
+        <section>
+            <div class="selecao">
+
+                <br> Coloque o Item : <input class="input" id="texto" type="texto">
+
+                <br><br> O valor do item : <input class="input" id="valor" type="number">
+
+                <br><br> Quantidade : <input class="input" id="quant" type="number">
+                <br>
+
+                <button type="button" class="btn btn-danger" onclick="adicionar(texto.value, valor.value, quant.value)"> Adicionar </button>
+                <button type="button" class="btn btn-danger" onclick="limpar()"> limpar </button>
+
+            </div>
+
+            <div id="tabela" class="tabela">
+                <table id="tabl">
+                    <thead>
+                        <tr>
+                            <th>Posição</th>
+                            <th>Itens</th>
+                            <th>Valor</th>
+                            <th>Quantidade</th>
+                            <th>Soma</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <br>
+            <p>* Faça a soma da suas compras aqui, seu resultado aparece automaticamente.*</p>
+
+        </section>
+        <footer>
+            &copy; Lucas Balbino.
+        </footer>
+    </div>
+
+</body>
+
+
+</html>

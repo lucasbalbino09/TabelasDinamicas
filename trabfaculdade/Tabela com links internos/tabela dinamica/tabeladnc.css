@@ -1,0 +1,54 @@
+body {
+    background: rgba(28, 63, 80, 0.986);
+    margin: 10px;
+    padding: 10px;
+    color: wheat;
+}
+
+img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-left: 70px;
+}
+
+h3 {
+    padding-top: 20px;
+}
+
+.container {
+    margin: 10px;
+}
+
+.input {
+    border-radius: 5px;
+}
+
+.selecao,
+button {
+    font: italic 20px Arial;
+    margin-top: 25px;
+}
+
+.btn btn-outline-info {
+    font: normal 15px Arial;
+}
+
+.tabela {
+    margin-top: 20px;
+    text-align: center;
+    font: italic 17px Arial;
+    border-spacing: 0;
+    color: rgb(216, 211, 216);
+}
+
+td,
+th {
+    padding: 10px 20px;
+    border: 1px solid rgb(139, 15, 15);
+}
+
+footer {
+    margin-top: 15px;
+    font: normal 20px Verdana;
+}

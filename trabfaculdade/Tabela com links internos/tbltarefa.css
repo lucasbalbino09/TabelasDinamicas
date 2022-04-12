@@ -1,0 +1,25 @@
+body {
+    background-image: linear-gradient(45deg, #4B0082, #663399, #800080);
+    margin: 20px;
+    padding: 20px;
+    height: 100vh;
+    text-align: center;
+    color: rgb(247, 181, 95);
+    font: normal 25px Arial;
+}
+
+img {
+    padding: 50px;
+    border-radius: 110px;
+}
+
+.interno {
+    text-align: left;
+    margin-left: 500px;
+}
+
+ol,
+li {
+    padding: 50px;
+    margin-right: 20%;
+}
